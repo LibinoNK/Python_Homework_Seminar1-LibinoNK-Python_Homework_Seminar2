@@ -3,8 +3,9 @@
 
 list = [61, 228, 9]
 
-for i in range(0, len(list)):
-    list[i] = str(list[i])
+def make_max_number(list):
+    for i in range(0, len(list)):
+        list[i] = str(list[i])
 print(list)
 
 for j in range(0, len(list)-1):
@@ -19,3 +20,5 @@ result = ""
 for k in range(0, len(list)):
     result = result + list[k]
 print(result)
+
+make_max_number(list)
